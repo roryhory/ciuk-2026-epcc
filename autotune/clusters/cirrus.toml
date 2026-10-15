@@ -18,7 +18,7 @@ shell = '/bin/bash --login'
 account = 'tc079-abszero'
 partition = 'standard'
 qos = 'standard'
-walltime_s = 600
+walltime_s = 240
 max_walltime_s = 600
 inline = false
 thread_sample_after_s = 20
@@ -36,8 +36,8 @@ binary = '/epccfs/tc079/tc079/shared/ciuk-2026-epcc/hpl/hpl-2.3/bin/CirrusOMP/xh
 build_id = 'cirrus-omp-cce19'
 
 n = [117248]
-nb = [256]
-threads = [1, 2, 4, 12]
+nb = [128, 256, 512]
+threads = [2, 4]
 max_pq_ratio = 5.0
 
 [model]
